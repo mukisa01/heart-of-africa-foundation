@@ -543,7 +543,7 @@ export default function Home() {
             </a>
 
             <a
-              href="tel:+25675309600"
+              href="tel:+256753409600"
               className="rounded-2xl border border-orange-100 bg-orange-50 p-7 transition hover:shadow-lg"
             >
               <div className="flex items-center gap-5">
