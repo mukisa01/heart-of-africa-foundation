@@ -51,6 +51,37 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-gray-800">
+      {/* ORGANIZATION SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Heart of Africa Foundation",
+            url: "https://heart-of-africa-foundation.vercel.app",
+            description:
+              "Heart of Africa Foundation supports orphans, vulnerable children and children with disabilities in Uganda and across Africa through care, support and community initiatives.",
+            founder: {
+              "@type": "Person",
+              name: "MUKISA ABDULSALAM",
+            },
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+256740638678",
+                contactType: "customer service",
+              },
+              {
+                "@type": "ContactPoint",
+                telephone: "+256753409600",
+                contactType: "customer service",
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* HEADER */}
       <header className="sticky top-0 z-50 border-b border-green-100 bg-white/95 shadow-sm backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
